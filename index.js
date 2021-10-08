@@ -11,7 +11,7 @@ const User=require('./models/user')
 const seedDB=require('./seed');
 
 //seedDB();
-console.log(process.env.password)
+
 mongoose.connect(`mongodb+srv://Deep0552:${process.env.password}@cluster0.wbtd0.mongodb.net/assignment8?retryWrites=true&w=majority`)
 .then(()=>{console.log("DB Connected")})
 .catch((err)=>{console.log(err)})
